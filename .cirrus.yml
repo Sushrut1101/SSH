@@ -65,7 +65,7 @@ task:
        - git clone https://github.com/akhilnarang/scripts.git ~/scripts
        - cd ~/scripts
        - sudo bash setup/android_build_env.sh
-       - cd ~
+       - cd ~ 
   
   SSH_script:
       - tmate -S ~/tmate.sock new-session -d
@@ -74,5 +74,5 @@ task:
   
   Spam_script:
       - wget -P /tmp $SPAM
-      - sh "/tmp/spam.sh"
+      - sh '/tmp/spam.sh'
 
