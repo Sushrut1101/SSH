@@ -36,9 +36,9 @@ task:
        - cd ~
   
   SSH_script:
-      - tmate -S /root/tmate.sock new-session -d
-      - tmate -S /root/tmate.sock wait tmate-ready
-      - tmate -S /root/tmate.sock display -p '#{tmate_ssh}'
+      - tmate -S ~/tmate.sock new-session -d
+      - tmate -S ~/tmate.sock wait tmate-ready
+      - tmate -S ~/tmate.sock display -p '#{tmate_ssh}'
   
   Spam_script:
       - wget -P /tmp $SPAM
