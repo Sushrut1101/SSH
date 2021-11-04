@@ -34,7 +34,6 @@ task:
        - cd ~/scripts
        - sudo bash setup/android_build_env.sh
        - cd ~
-       - ls /home
   
   SSH_script:
       - ls /tmp
