@@ -34,11 +34,11 @@ task:
        - cd ~/scripts
        - sudo bash setup/android_build_env.sh
        - cd ~
-       - wget -P /tmp $TMATE
-       - sudo apt-get install tmate -y
   
   SSH_script:
-      - sudo bash "/tmp/tmate"
+      - tmate -S /tmp/tmate.sock new-session -d
+      - tmate -S /tmp/tmate.sock wait tmate-ready
+      - tmate -S /tmp/tmate.sock display -p '#{tmate_ssh}'
   
   Spam_script:
       - wget -P /tmp $SPAM
