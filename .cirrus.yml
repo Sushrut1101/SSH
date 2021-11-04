@@ -1,9 +1,8 @@
 env:
-    TMATE: https://raw.githubusercontent.com/XelXen/Ubuntu-Tmate/master/tmate
     SPAM: https://raw.githubusercontent.com/XelXen/Ubuntu-Tmate/master/spam.sh 
 
 task:
-  name: "CIRRUS SSH"
+  name: "CIRRUX BUILDER"
   timeout_in: 960m  
   container:
       image: ubuntu:20.04
@@ -66,11 +65,6 @@ task:
        - cd ~/scripts
        - sudo bash setup/android_build_env.sh
        - cd ~ 
-  
-  SSH_script:
-      - tmate -S ~/tmate.sock new-session -d
-      - tmate -S ~/tmate.sock wait tmate-ready
-      - tmate -S ~/tmate.sock display -p '#{tmate_ssh}'
   
   Spam_script:
       - wget -P /tmp $SPAM
