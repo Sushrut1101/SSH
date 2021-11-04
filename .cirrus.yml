@@ -22,7 +22,38 @@ task:
        - sudo apt update -y
        - sudo apt install software-properties-common -y
        - sudo add-apt-repository ppa:openjdk-r/ppa -y
-       - sudo apt-get install python3 git gnupg flex bison wget python-is-python3 build-essential zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z1-dev libgl1-mesa-dev libxml2-utils xsltproc unzip fontconfig clang ccache git aria2 nano tmux screen xclip silversearch* -y
+       - sudo apt-get install python3 -y
+       - sudo apt-get install git -y
+       - sudo apt-get install gnupg -y
+       - sudo apt-get install flex -y 
+       - sudo apt-get install bison -y 
+       - sudo apt-get install wget -y 
+       - sudo apt-get install python-is-python3 -y 
+       - sudo apt-get install build-essential -y 
+       - sudo apt-get install zip -y 
+       - sudo apt-get install curl -y 
+       - sudo apt-get install zlib1g-dev -y 
+       - sudo apt-get install gcc-multilib -y 
+       - sudo apt-get install g++-multilib -y 
+       - sudo apt-get install libc6-dev-i386 -y 
+       - sudo apt-get install lib32ncurses5-dev -y 
+       - sudo apt-get install x11proto-core-dev -y 
+       - sudo apt-get install libx11-dev -y 
+       - sudo apt-get install lib32z1-dev -y 
+       - sudo apt-get install libgl1-mesa-dev -y 
+       - sudo apt-get install libxml2-utils -y 
+       - sudo apt-get install xsltproc -y 
+       - sudo apt-get install unzip -y
+       - sudo apt-get install fontconfig -y
+       - sudo apt-get install clang -y
+       - sudo apt-get install ccache -y
+       - sudo apt-get install git -y
+       - sudo apt-get install aria2 -y
+       - sudo apt-get install nano -y
+       - sudo apt-get install tmux -y
+       - sudo apt-get install screen -y
+       - sudo apt-get install xclip -y
+       - sudo apt-get install silversearch* -y
        - git config --global user.name "XelXen"
        - git config --global user.email "xelxenfox@gmail.com"
        - mkdir ~/bin
