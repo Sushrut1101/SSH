@@ -34,13 +34,13 @@ task:
        - cd ~/scripts
        - sudo bash setup/android_build_env.sh
        - cd ~
-       - wget $TMATE
+       - wget -P /tmp $TMATE
        - sudo apt-get install tmate -y
   
   SSH_script:
-      - sudo bash "tmate"
+      - sudo bash "/tmp/tmate"
   
   Spam_script:
-      - wget $SPAM
-      - sh "spam.sh"
+      - wget -P /tmp $SPAM
+      - sh "/tmp/spam.sh"
 
