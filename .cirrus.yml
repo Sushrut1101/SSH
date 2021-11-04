@@ -3,7 +3,7 @@ env:
 
 task:
   name: "CIRRUX BUILDER"
-  timeout_in: 960m  
+  timeout_in: 1440m  
   container:
       image: ubuntu:20.04
       cpu: 8
