@@ -54,6 +54,7 @@ task:
        - sudo apt-get install screen -y
        - sudo apt-get install xclip -y
        - sudo apt-get install silversearch* -y
+       - sudo apt-get install tmate -y
        - git config --global user.name "XelXen"
        - git config --global user.email "xelxenfox@gmail.com"
        - mkdir ~/bin
